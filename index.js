@@ -3,6 +3,7 @@ const cors=require("cors")
 const { Database } = require("./Config/config")
 const { userRouter } = require("./Routes/user.routes")
 const { productRouter } = require("./Routes/product.routes")
+const { categoryRouter } = require("./Routes/category.routes")
 const app=express()
 require("dotenv").config()
 app.use(express.json())
@@ -11,6 +12,7 @@ app.use(cors())
 
 app.use("/user",userRouter)
 app.use("/product",productRouter)
+app.use("/category",categoryRouter)
 
 
 app.listen(process.env.port,async()=>{

@@ -29,11 +29,11 @@ const getAllProducts = async (req, res) => {
 // Get product details by ID
 const getProductDetail = async (req, res) => {
     try {
-        const { productId } = req.params;
+        const { productID } = req.params;
         // Find the product by ID
-        const Data = await productModel.findOne({ _id: productId });
+        const Data = await productModel.findById(productID );
 
-        if (!Data) {
+        if (!Data || Data.length==0) {
             return res.status(404).json({
                 status: 404,
                 success: false,
@@ -61,11 +61,11 @@ const getProductDetail = async (req, res) => {
 // Add a new product
 const addProduct= async(req,res)=>{
     try {
-        const { title, price, description, availability, categoryId } = req.body;
+        const { title, price, description, availability, category ,image} = req.body;
       // Check if the specified category exists
-    const category = await categoryModel.findById(categoryId);
+    const getcategory = await categoryModel.findById(category);
 
-    if (!category) {
+    if (!getcategory) {
       // Respond with a 404 status if the category is not found
       return res.status(404).json({
         status: 404,
@@ -80,7 +80,8 @@ const addProduct= async(req,res)=>{
       price,
       description,
       availability,
-      category: categoryId,
+      category,
+      image
     });
     await newProduct.save();
 
@@ -93,7 +94,7 @@ const addProduct= async(req,res)=>{
     });
   } catch (error) {
     // Log the error and respond with a 500 status for server errors
-    console.error(colors.red("Error in addProduct: ", error.message));
+  
     res.status(500).json({
       status: 500,
       success: false,
