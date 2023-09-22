@@ -105,6 +105,132 @@ const addProduct= async(req,res)=>{
 
 }
 
+
+
+
+// Get products by category ID
+// exports.getProductsByCategory = async (req, res) => {
+//   try {
+//     const { categoryId } = req.params;
+
+//     // Find products by category ID and populate category details
+//     const categorizedProducts = await productModel
+//       .find({ category: categoryId })
+//       .populate("category");
+
+//     if (!categorizedProducts.length) {
+//       // Respond with a 404 status if no products are found
+//       return res.status(404).json({
+//         status: 404,
+//         success: false,
+//         message: "No products found for this category",
+//       });
+//     }
+
+//     // Respond with a 200 status if successful
+//     return res.status(200).json({
+//       status: 200,
+//       success: true,
+//       message: "Products retrieved successfully by Category ID",
+//       data: categorizedProducts,
+//     });
+//   } catch (error) {
+//     // Log the error and respond with a 500 status for server errors
+//     console.error(
+//       colors.red("Error in getProductsByCategory: ", error.message)
+//     );
+//     res.status(500).json({
+//       status: 500,
+//       success: false,
+//       error: "Internal Server Error",
+//       message: error.message,
+//     });
+//   }
+// };
+
+
+// Update an existing product
+// exports.updateProduct = async (req, res) => {
+//   try {
+//     const { productId } = req.params;
+//     const { title, price, description, availability } = req.body;
+
+//     // Check if the product with the provided productId exists
+//     const product = await productModel.findByIdAndUpdate(
+//       productId,
+//       {
+//         $set: {
+//           title: title,
+//           price: price,
+//           description: description,
+//           availability: availability,
+//         },
+//       },
+//       { new: true }
+//     );
+
+//     if (!product) {
+//       // Respond with a 404 status if the product is not found
+//       return res.status(404).json({
+//         status: 404,
+//         success: false,
+//         message: "Product not found",
+//       });
+//     }
+
+//     // Respond with a 200 status if the product is successfully updated
+//     return res.status(200).json({
+//       status: 200,
+//       success: true,
+//       message: "Product updated successfully",
+//       data: product,
+//     });
+//   } catch (error) {
+//     // Log the error and respond with a 500 status for server errors
+//     console.error(colors.red("Error in updateProduct: ", error.message));
+//     res.status(500).json({
+//       status: 500,
+//       success: false,
+//       error: "Internal Server Error",
+//       message: error.message,
+//     });
+//   }
+// };
+
+// // Delete an existing product
+// exports.deleteProduct = async (req, res) => {
+//   try {
+//     const { productId } = req.params;
+
+//     // Check if the product with the provided productId exists
+//     const product = await productModel.findById(productId);
+//     if (!product) {
+//       // Respond with a 404 status if the product is not found
+//       return res.status(404).json({
+//         status: 404,
+//         success: false,
+//         message: "Product not found",
+//       });
+//     }
+
+//     // Delete the product
+//     await productModel.findByIdAndDelete(productId);
+
+//     // Respond with a 204 status (No Content) for a successful deletion
+//     return res.status(204).send();
+//   } catch (error) {
+//     // Log the error and respond with a 500 status for server errors
+//     console.error(colors.red("Error in deleteProduct: ", error.message));
+//     res.status(500).json({
+//       status: 500,
+//       success: false,
+//       error: "Internal Server Error",
+//       message: error.message,
+//     });
+//   }
+// };
+
+
 module.exports={
     getAllProducts,getProductDetail,addProduct
 }

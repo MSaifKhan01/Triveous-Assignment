@@ -1,6 +1,6 @@
 const { categoryModel } = require("../Models/category.model");
 
-
+// Create a new category
 const addCategory = async (req, res) => {
     try {
         const { name } = req.body;
@@ -26,6 +26,8 @@ const addCategory = async (req, res) => {
 
 }
 
+
+// Get all categories
 const getAllCategory=async(req,res)=>{
     try {
         const data= await categoryModel.find()
@@ -48,6 +50,8 @@ const getAllCategory=async(req,res)=>{
     }
 }
 
+
+// Get category by Id
 const getCategoryByID=async(req,res)=>{
     try {
         const {categoryID}=req.params
@@ -63,6 +67,82 @@ const getCategoryByID=async(req,res)=>{
     }
 }
 
+// Update category by Id
+
+const updateCategory=async(req,res)=>{
+    try {
+        const {categoryID}=req.params
+        const { name } = req.body;
+
+        const category = await categoryModel.findByIdAndUpdate(
+            categoryID,
+          { name},
+          { new: true }
+        );
+    
+        if (!category) {
+          return res.status(404).json({
+            status: 404,
+            success: false,
+            message: "Category not found",
+          });
+        }
+    
+        return res.status(200).json({
+          status: 200,
+          success: true,
+          message: "Category updated successfully",
+          data: category,
+        });
+      } catch (error) {
+        
+        res.status(500).json({
+          status: 500,
+          success: false,
+          error: "Internal Server Error",
+          message: error.message,
+        });
+      }
+
+}
+
+
+
+// Delete category by Id
+const deleteCategory = async (req, res) => {
+    try {
+      const { categoryID } = req.params;
+      const category = await categoryModel.findById(categoryID);
+  
+      if (!category) {
+        return res.status(404).json({
+          status: 404,
+          success: false,
+          message: "Category not found",
+        });
+      }
+  
+      await categoryModel.findByIdAndDelete(categoryID);
+
+      return res.status(200).json({
+        status: 200,
+        success: true,
+        message: "Category deleted successfully",
+        data: category,
+      });
+  
+      
+    } catch (error) {
+     
+      res.status(500).json({
+        status: 500,
+        success: false,
+        error: "Internal Server Error",
+        message: error.message,
+      });
+    }
+  };
+
 module.exports={
-    addCategory,getAllCategory,getCategoryByID
+    addCategory,getAllCategory,getCategoryByID,updateCategory,deleteCategory
 }
