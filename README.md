@@ -62,7 +62,9 @@ To start the backend server, use one of the following commands:
 
 shell
 nodemon index.js
-# or
+
+OR
+
 npm run server
 
 
