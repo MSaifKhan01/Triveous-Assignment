@@ -1,5 +1,5 @@
 # Triveous-Assignment
-
+# Deployed-Link : https://triveous-ww2h.onrender.com
 
 
 
@@ -59,9 +59,6 @@ Our backend API is built using the following technologies:
 To start the backend server, use one of the following commands:
 
 shell
-npm start
-
-# or
 nodemon index.js
 # or
 npm run server
@@ -74,11 +71,9 @@ For detailed information on how to use our API, please refer to the [API documen
 
 ## Swagger API Docs
 
-You can also access the Swagger API documentation [here](http://54.82.202.67:8080/docs/).
+You can also access the Swagger API documentation [here](https://triveous-ww2h.onrender.com/docs/).
 
-## Database Schema
 
-To understand the data structure of our MongoDB database, explore the [Database Schema](docs/Database_Schema.png).
 
 
 
