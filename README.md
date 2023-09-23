@@ -79,16 +79,21 @@ You can also access the Swagger API documentation [here](https://triveous-ww2h.o
 
 ## Snapshorts Documentation
 
-![Alt text](<Screenshot 2023-09-23 134347.png>)
+<img width="944" alt="Screenshot 2023-09-23 134347" src="https://github.com/MSaifKhan01/Triveous-Assignment/assets/119418918/18da82ce-06e2-46f6-986f-9f1759d1657d">
 
-![Alt text](<Screenshot 2023-09-23 134522.png>)
+<img width="939" alt="Screenshot 2023-09-23 134522" src="https://github.com/MSaifKhan01/Triveous-Assignment/assets/119418918/0e423f4c-b0ca-434c-955c-36a64f46e000">
 
-![Alt text](<Screenshot 2023-09-23 134600.png>)
 
-![Alt text](<Screenshot 2023-09-23 134642.png>)
+<img width="935" alt="Screenshot 2023-09-23 134600" src="https://github.com/MSaifKhan01/Triveous-Assignment/assets/119418918/0085c8bf-eca4-48a6-a152-505fcfe40261">
 
-![Alt text](<Screenshot 2023-09-23 134723.png>)
 
-![Alt text](<Screenshot 2023-09-23 134802.png>)
+<img width="941" alt="Screenshot 2023-09-23 134642" src="https://github.com/MSaifKhan01/Triveous-Assignment/assets/119418918/c724e4e5-4c1b-4df9-aa45-15c9a78fe794">
+
+
+<img width="939" alt="Screenshot 2023-09-23 134723" src="https://github.com/MSaifKhan01/Triveous-Assignment/assets/119418918/b8f09714-863d-42ea-ad31-629be2394925">
+
+
+<img width="947" alt="Screenshot 2023-09-23 134802" src="https://github.com/MSaifKhan01/Triveous-Assignment/assets/119418918/000901e2-f048-498b-ac69-b7d2422ed49a">
+
 
 Made with ❤️ by the Triveous Ecommerce Team
