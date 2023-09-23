@@ -12,7 +12,7 @@ const Register= async (req, res) => {
     try {
         const user = await userModel.findOne({email})
         if(user){
-           return res.status(200).send({ "msg": "You are already registered" })
+           return res.status(400).send({ "msg": "You are already registered" })
         }
         bcrypt.hash(password, 5, async (err, hash) => {
             const user = new userModel({ username, email, password: hash})
@@ -21,7 +21,7 @@ const Register= async (req, res) => {
         })
 
     } catch (err) {
-        res.status(400).send({ "msg": "registration failed" })
+        return res.status(500).send({ "msg": "registration failed" })
     }
 
 }
@@ -32,16 +32,16 @@ const Login= async (req, res) => {
         if (user) {
             bcrypt.compare(password, user.password, (err, result) => {
                 if (result) {
-                    res.status(200).send({ "msg": "login succesfully","name":user.name,user, "token": jwt.sign({ "userID":user._id }, process.env.JWT_SECRET_KEY, { expiresIn: '3h' }) })
+                    res.status(200).send({ "msg": "login succesful","name":user.name,user, "token": jwt.sign({ "userID":user._id }, process.env.JWT_SECRET_KEY, { expiresIn: '3h' }) })
                 } else {
-                    res.status(400).send({ "msg": "login failed" })
+                    res.status(401).send({ "msg": "login failed" })
                 }
             })
 
         }
 
     } catch (err) {
-        res.status(400).send({ "msg": err.massage })
+        return res.status(500).send({ "msg": err.massage })
     }
 
 }
