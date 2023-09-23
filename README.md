@@ -52,7 +52,9 @@ Our backend API is built using the following technologies:
 - *MongoDB:* A NoSQL database for efficient data storage and retrieval.
 - *Mongoose:* An elegant object modeling library for MongoDB, making it easy to manage database interactions.
 - *JSON Web Tokens (JWT):* Secure user authentication and authorization.
-- *Nodemailer:* A powerful library for sending email notifications.
+
+
+
 
 ## Running the Server
 
