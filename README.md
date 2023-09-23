@@ -9,7 +9,7 @@ The Triveous Ecommerce Backend API, meticulously crafted by me , establishes a s
 
 - Register as a user.
 - Log in with credentials using JWT token for authentication.
-- Log out (blacklist the token).
+
 
 ### Product
 
@@ -84,21 +84,23 @@ You can also access the Swagger API documentation [here](https://triveous-ww2h.o
 
 ## Snapshorts Documentation
 
-<img width="944" alt="Screenshot 2023-09-23 134347" src="https://github.com/MSaifKhan01/Triveous-Assignment/assets/119418918/18da82ce-06e2-46f6-986f-9f1759d1657d">
 
-<img width="939" alt="Screenshot 2023-09-23 134522" src="https://github.com/MSaifKhan01/Triveous-Assignment/assets/119418918/0e423f4c-b0ca-434c-955c-36a64f46e000">
+<img width="944" alt="Screenshot 2023-09-23 134347" src="https://github.com/MSaifKhan01/Triveous-Assignment/assets/119418918/dcaacfe6-a617-4fdd-a34f-3a324edefa51">
+
+<img width="939" alt="Screenshot 2023-09-23 134522" src="https://github.com/MSaifKhan01/Triveous-Assignment/assets/119418918/d095f3bc-d363-44ed-a2c8-337d78a779d3">
+
+<img width="935" alt="Screenshot 2023-09-23 134600" src="https://github.com/MSaifKhan01/Triveous-Assignment/assets/119418918/0c3e673e-7974-4799-91f4-d7cf4c74c693">
+
+<img width="941" alt="Screenshot 2023-09-23 134642" src="https://github.com/MSaifKhan01/Triveous-Assignment/assets/119418918/d64ad172-62bd-4008-9a05-daef9804d5e2">
+
+<img width="939" alt="Screenshot 2023-09-23 134723" src="https://github.com/MSaifKhan01/Triveous-Assignment/assets/119418918/521255e8-6561-4d2e-ae31-389f3ced0be7">
+
+<img width="947" alt="Screenshot 2023-09-23 134802" src="https://github.com/MSaifKhan01/Triveous-Assignment/assets/119418918/11e422f5-8603-4605-83c8-6d853a78d087">
 
 
-<img width="935" alt="Screenshot 2023-09-23 134600" src="https://github.com/MSaifKhan01/Triveous-Assignment/assets/119418918/0085c8bf-eca4-48a6-a152-505fcfe40261">
 
 
-<img width="941" alt="Screenshot 2023-09-23 134642" src="https://github.com/MSaifKhan01/Triveous-Assignment/assets/119418918/c724e4e5-4c1b-4df9-aa45-15c9a78fe794">
 
-
-<img width="939" alt="Screenshot 2023-09-23 134723" src="https://github.com/MSaifKhan01/Triveous-Assignment/assets/119418918/b8f09714-863d-42ea-ad31-629be2394925">
-
-
-<img width="947" alt="Screenshot 2023-09-23 134802" src="https://github.com/MSaifKhan01/Triveous-Assignment/assets/119418918/000901e2-f048-498b-ac69-b7d2422ed49a">
 
 
 Made with ❤️ by the Triveous Ecommerce Team
