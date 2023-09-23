@@ -1,8 +1,6 @@
 # Triveous-Assignment
 # Deployed-Link : https://triveous-ww2h.onrender.com
 
-
-
 The Triveous Ecommerce Backend API, meticulously crafted by me , establishes a sturdy base for your online retail endeavors. Offering an array of capabilities spanning user administration, product catalog management, shopping cart functionality, and order processing, it bestows your ecommerce business with unparalleled flexibility and power.
 
 ## Features
@@ -62,7 +60,9 @@ To start the backend server, use one of the following commands:
 
 shell
 
-nodemon index.js
+1) npm i
+
+2) nodemon index.js
 
 OR
 
